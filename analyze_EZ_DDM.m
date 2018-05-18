@@ -72,9 +72,7 @@ for s = 1:nSubjects
                 % sweep individual trials
                 for iii = 1:length(trials)
                     
-                    temp = trials{iii,1};
-                    
-                    if ~strcmp(temp,'NULL')
+                    if ~strcmp(trials{iii,1},'NULL')
                         load_idx(iii,i)=i;
                     end
                     
@@ -83,11 +81,7 @@ for s = 1:nSubjects
             end
             
         end
-        
-        % clear 
-        % variable
-        clear temp
-        
+                     
         % conditions
         temp(:,1) = sum(load_idx,2); 
         
