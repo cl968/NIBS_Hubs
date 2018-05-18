@@ -84,6 +84,10 @@ for s = 1:nSubjects
             
         end
         
+        % clear 
+        % variable
+        clear temp
+        
         % conditions
         temp(:,1) = sum(load_idx,2); 
         
